@@ -72,7 +72,7 @@ const generatePlot = (x1, x2, x3, y1, y2, y3, x, y) => {
     data: {
       datasets: [
         {
-          label: "Rasberry pi",
+          label: "Station",
           backgroundColor: "#c11747",
           data: [
             {
@@ -90,7 +90,7 @@ const generatePlot = (x1, x2, x3, y1, y2, y3, x, y) => {
           ],
         },
         {
-          label: "Mac Phone",
+          label: "Mac",
           backgroundColor: "blue",
           data: [
             {
@@ -114,7 +114,7 @@ const generatePlot = (x1, x2, x3, y1, y2, y3, x, y) => {
   });
 };
 
-generatePlot(0, 0, 0, 0, 0, 0, 0, 0);
+generatePlot(9, 8, 2, 1, 7, 5, 0, 0);
 
 let btn = document.querySelectorAll("button");
 
@@ -127,12 +127,12 @@ const plot = (e) => {
     .replace(/\]/, "")
     .split(",");
   generatePlot(
-    Math.floor(Math.random() * 5) + 1,
-    Math.floor(Math.random() * 5) + 1,
-    Math.floor(Math.random() * 5) + 1,
-    Math.floor(Math.random() * 5) + 1,
-    Math.floor(Math.random() * 5) + 1,
-    Math.floor(Math.random() * 5) + 1,
+    9,
+    8,
+    2,
+    1,
+    7,
+    5,
     formattedCoordinates[0],
     formattedCoordinates[1]
   );

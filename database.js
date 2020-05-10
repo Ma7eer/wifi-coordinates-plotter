@@ -1,11 +1,8 @@
-const mysql = require("mysql");
+const pg = require("pg");
 
-const connection = mysql.createConnection({
-  host: "84.242.33.190",
-  user: "client",
-  password: "client",
-  database: "wifi",
-  port: 3306,
-});
+const connectionString =
+  "postgres://tssqlzsa:UTkycJyhq68aCmHiZH8JwsMWKF9zdYaC@dumbo.db.elephantsql.com:5432/tssqlzsa";
 
-module.exports = connection;
+const client = new pg.Client(connectionString);
+
+module.exports = client;
