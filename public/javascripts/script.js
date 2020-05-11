@@ -48,6 +48,9 @@ const generatePlot = (x1, x2, x3, y1, y2, y3, x, y) => {
   });
 };
 
+let station = document.querySelector("h1");
+console.log(station.innerHTML);
+
 generatePlot(9, 8, 2, 1, 7, 5, 0, 0);
 
 let btn = document.querySelectorAll("button");
