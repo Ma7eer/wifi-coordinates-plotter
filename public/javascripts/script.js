@@ -48,10 +48,14 @@ const generatePlot = (x1, x2, x3, y1, y2, y3, x, y) => {
   });
 };
 
-let station = document.querySelector("h1");
-console.log(station.innerHTML.replace(/\Station: /, ""));
-
-generatePlot(9, 8, 2, 1, 7, 5, 0, 0);
+let x1 = document.getElementById("x1").innerHTML;
+let x2 = document.getElementById("x2").innerHTML;
+let x3 = document.getElementById("x3").innerHTML;
+let y1 = document.getElementById("y1").innerHTML;
+let y2 = document.getElementById("y2").innerHTML;
+let y3 = document.getElementById("y3").innerHTML;
+console.log(x1);
+generatePlot(x1, x2, x3, y1, y2, y3, 0, 0);
 
 let btn = document.querySelectorAll("button");
 

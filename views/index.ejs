@@ -28,8 +28,13 @@
     <div class="container">
       <div id="app">
         <h1 style="text-align: center;">
-          Station: [<%= station.x1 %>,<%= station.y1 %>], [<%= station.x2 %>,<%=
-          station.y2 %>], [<%= station.x3 %>,<%= station.y3 %>]
+          Station: [<span id="x1"><%= station.x1 %></span>,<span id="y1"
+            ><%= station.y1 %></span
+          >], [<span id="x2"><%= station.x2 %></span>,<span id="y2"
+            ><%= station.y2 %></span
+          >], [<span id="x3"><%= station.x3 %></span>,<span id="y3"
+            ><%= station.y3 %></span
+          >]
         </h1>
         <canvas id="myChart"></canvas>
         <table class="table table-hover">
