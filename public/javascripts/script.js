@@ -54,7 +54,7 @@ let x3 = document.getElementById("x3").innerHTML;
 let y1 = document.getElementById("y1").innerHTML;
 let y2 = document.getElementById("y2").innerHTML;
 let y3 = document.getElementById("y3").innerHTML;
-console.log(x1);
+
 generatePlot(x1, x2, x3, y1, y2, y3, 0, 0);
 
 let btn = document.querySelectorAll("button");
@@ -68,12 +68,12 @@ const plot = (e) => {
     .replace(/\]/, "")
     .split(",");
   generatePlot(
-    9,
-    8,
-    2,
-    1,
-    7,
-    5,
+    x1,
+    x2,
+    x3,
+    y1,
+    y2,
+    y3,
     formattedCoordinates[0],
     formattedCoordinates[1]
   );
