@@ -13,7 +13,7 @@ router.get("/", function (req, res, next) {
       db.end();
       return res.render("index", {
         entries: results2.rows,
-        station: results1.rows[0],
+        station: results1.rows[results1.rows.length - 1],
       });
     });
   });
