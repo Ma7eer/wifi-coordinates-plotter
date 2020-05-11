@@ -59,11 +59,11 @@ generatePlot(x1, x2, x3, y1, y2, y3, 0, 0);
 
 let btn = document.querySelectorAll("button");
 
-const plot = (e) => {
-  let row = e.target.parentNode.parentNode;
-  let cells = row.getElementsByTagName("td");
-  let coordinatesInStringFormat = cells[3].innerHTML;
-  let formattedCoordinates = coordinatesInStringFormat
+const plot = async (e) => {
+  let row = await e.target.parentNode.parentNode;
+  let cells = await row.getElementsByTagName("td");
+  let coordinatesInStringFormat = await cells[3].innerHTML;
+  let formattedCoordinates = await coordinatesInStringFormat
     .replace(/\[/, "")
     .replace(/\]/, "")
     .split(",");
@@ -77,6 +77,8 @@ const plot = (e) => {
     formattedCoordinates[0],
     formattedCoordinates[1]
   );
+  // scroll to top
+  window.scrollTo(0, 0);
 };
 
 btn.forEach((b) => {
