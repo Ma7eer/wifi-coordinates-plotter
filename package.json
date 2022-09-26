@@ -15,7 +15,7 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "pg": "^8.1.0",
-    "pm2": "^4.4.0"
+    "pm2": "^5.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.3"
